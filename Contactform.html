@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contactez-nous</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      direction: ltr;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .lang-select {
+      margin-bottom: 20px;
+    }
+    [lang] {
+      display: none;
+    }
+    [lang].active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="lang-select">
+    <label for="language">🌐 Choisir la langue :</label>
+    <select id="language" onchange="changeLanguage(this.value)">
+      <option value="fr">Français</option>
+      <option value="en">English</option>
+      <option value="es">Español</option>
+      <option value="de">Deutsch</option>
+      <option value="it">Italiano</option>
+      <option value="ar">العربية</option>
+    </select>
+  </div>
+
+  <!-- Français -->
+  <div lang="fr" class="active">
+    <h3>📬 <strong>Contactez-nous</strong></h3>
+    <p>Vous avez une question, une suggestion ou souhaitez effectuer un achat ?<br>Notre équipe est à votre écoute !</p>
+    <p>📧 <strong>Email</strong> : <a href="mailto:votre-email@example.com">votre-email@example.com</a><br>
+    📍 <strong>Adresse</strong> : [Nom de l’établissement], [Ville], [Pays]</p>
+    <p>💬 <strong>WhatsApp</strong> : <em>Disponible uniquement par message texte</em></p>
+    <p>🔔 <strong>Note importante</strong> :<br>
+    En raison d'une forte demande, et afin de mieux filtrer les clients réellement intéressés par un achat, notre numéro WhatsApp est <strong>accessible uniquement pour les messages écrits</strong>.</p>
+    <p><strong>Merci pour votre compréhension.</strong><br>
+    Nous vous remercions pour votre intérêt et nous engageons à vous répondre dans les meilleurs délais.</p>
+  </div>
+
+  <!-- English -->
+  <div lang="en">
+    <h3>📬 <strong>Contact Us</strong></h3>
+    <p>Do you have a question, a suggestion, or want to make a purchase?<br>Our team is here to help you!</p>
+    <p>📧 <strong>Email</strong>: <a href="mailto:votre-email@example.com">votre-email@example.com</a><br>
+    📍 <strong>Address</strong>: [Institution Name], [City], [Country]</p>
+    <p>💬 <strong>WhatsApp</strong>: <em>Available via text message only</em></p>
+    <p>🔔 <strong>Important Note</strong>:<br>
+    Due to high demand, and in order to better filter truly interested buyers, our WhatsApp number is <strong>available for text messages only</strong>.</p>
+    <p><strong>Thank you for your understanding.</strong><br>
+    We appreciate your interest and will respond as soon as possible.</p>
+  </div>
+
+  <!-- Español -->
+  <div lang="es">
+    <h3>📬 <strong>Contáctanos</strong></h3>
+    <p>¿Tienes una pregunta, sugerencia o deseas realizar una compra?<br>¡Nuestro equipo está a tu disposición!</p>
+    <p>📧 <strong>Email</strong>: <a href="mailto:votre-email@example.com">votre-email@example.com</a><br>
+    📍 <strong>Dirección</strong>: [Nombre del establecimiento], [Ciudad], [País]</p>
+    <p>💬 <strong>WhatsApp</strong>: <em>Disponible solo por mensaje de texto</em></p>
+    <p>🔔 <strong>Nota importante</strong>:<br>
+    Debido a la alta demanda, y para filtrar mejor a los compradores realmente interesados, nuestro número de WhatsApp está <strong>disponible solo para mensajes escritos</strong>.</p>
+    <p><strong>Gracias por su comprensión.</strong><br>
+    Agradecemos su interés y le responderemos lo antes posible.</p>
+  </div>
+
+  <!-- Deutsch -->
+  <div lang="de">
+    <h3>📬 <strong>Kontaktieren Sie uns</strong></h3>
+    <p>Haben Sie eine Frage, einen Vorschlag oder möchten Sie einen Kauf tätigen?<br>Unser Team steht Ihnen zur Verfügung!</p>
+    <p>📧 <strong>Email</strong>: <a href="mailto:votre-email@example.com">votre-email@example.com</a><br>
+    📍 <strong>Adresse</strong>: [Name der Einrichtung], [Stadt], [Land]</p>
+    <p>💬 <strong>WhatsApp</strong>: <em>Nur per Textnachricht erreichbar</em></p>
+    <p>🔔 <strong>Wichtiger Hinweis</strong>:<br>
+    Aufgrund der hohen Nachfrage und zur besseren Filterung ernsthafter Käufer ist unsere WhatsApp-Nummer <strong>nur für Textnachrichten verfügbar</strong>.</p>
+    <p><strong>Vielen Dank für Ihr Verständnis.</strong><br>
+    Wir danken Ihnen für Ihr Interesse und werden so schnell wie möglich antworten.</p>
+  </div>
+
+  <!-- Italiano -->
+  <div lang="it">
+    <h3>📬 <strong>Contattaci</strong></h3>
+    <p>Hai una domanda, un suggerimento o vuoi fare un acquisto?<br>Il nostro team è a tua disposizione!</p>
+    <p>📧 <strong>Email</strong>: <a href="mailto:votre-email@example.com">votre-email@example.com</a><br>
+    📍 <strong>Indirizzo</strong>: [Nome dell’istituto], [Città], [Paese]</p>
+    <p>💬 <strong>WhatsApp</strong>: <em>Disponibile solo tramite messaggio di testo</em></p>
+    <p>🔔 <strong>Nota importante</strong>:<br>
+    A causa dell'elevata richiesta, e per filtrare meglio i clienti realmente interessati all'acquisto, il nostro numero WhatsApp è <strong>disponibile solo per messaggi di testo</strong>.</p>
+    <p><strong>Grazie per la comprensione.</strong><br>
+    Apprezziamo il tuo interesse e risponderemo il prima possibile.</p>
+  </div>
+
+  <!-- العربية -->
+  <div lang="ar" dir="rtl">
+    <h3>📬 <strong>اتصل بنا</strong></h3>
+    <p>هل لديك سؤال، اقتراح أو ترغب في إجراء عملية شراء؟<br>فريقنا في خدمتك!</p>
+    <p>📧 <strong>البريد الإلكتروني</strong>: <a href="mailto:votre-email@example.com">votre-email@example.com</a><br>
+    📍 <strong>العنوان</strong>: [اسم المؤسسة]، [المدينة]، [البلد]</p>
+    <p>💬 <strong>واتساب</strong>: <em>متاح فقط عبر الرسائل النصية</em></p>
+    <p>🔔 <strong>ملاحظة هامة</strong>:<br>
+    نظرًا للطلب المرتفع، ومن أجل تصفية العملاء الجادين فقط، فإن رقم الواتساب <strong>متاح فقط للرسائل النصية</strong>.</p>
+    <p><strong>شكرًا لتفهمكم.</strong><br>
+    نشكركم على اهتمامكم وسنقوم بالرد في أقرب وقت ممكن.</p>
+  </div>
+
+  <script>
+    function changeLanguage(lang) {
+      document.querySelectorAll('[lang]').forEach(el => el.classList.remove('active'));
+      document.querySelector('[lang="' + lang + '"]').classList.add('active');
+
+      // Handle RTL for Arabic
+      document.body.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+    }
+  </script>
+</body>
+</html>
